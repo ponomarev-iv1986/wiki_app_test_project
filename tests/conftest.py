@@ -34,6 +34,25 @@ def mobile_management():
             command_executor='http://127.0.0.1:4723/wd/hub',
             options=options
         )
+    else:
+        capabilities = {
+            'platformName': 'android',
+            'platformVersion': '10.0',
+            'deviceName': 'Google Pixel 3',
+            'app': 'bs://dd472bc10e6ccca8b77ca9164700eab79a87cb6a',
+            'bstack:options': {
+                'projectName': 'First Python project',
+                'buildName': 'browserstack-build-1',
+                'sessionName': 'BStack first_test',
+                'userName': config.settings.BSTACK_USER,
+                'accessKey': config.settings.BSTACK_ACCESS_KEY
+            }
+        }
+        options.load_capabilities(capabilities)
+        driver = webdriver.Remote(
+            command_executor='http://hub.browserstack.com/wd/hub',
+            options=options
+        )
     browser.config.driver = driver
     browser.config.timeout = 10.0
 
