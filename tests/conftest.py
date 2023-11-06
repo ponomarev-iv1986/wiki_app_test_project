@@ -13,7 +13,8 @@ from wiki_app_test_project import utils
 def mobile_management():
     app_path = os.path.join(
         config.BASE_DIR,
-        'wiki_app_test_project',
+        'tests',
+        'resources',
         'app',
         'app-alpha-universal-release.apk'
     )
