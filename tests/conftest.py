@@ -29,7 +29,6 @@ def mobile_management():
             'appWaitActivity': 'org.wikipedia.*'
         }
         options.load_capabilities(capabilities)
-
         driver = webdriver.Remote(
             command_executor='http://127.0.0.1:4723/wd/hub',
             options=options
@@ -53,6 +52,7 @@ def mobile_management():
             command_executor='http://hub.browserstack.com/wd/hub',
             options=options
         )
+
     browser.config.driver = driver
     browser.config.timeout = 10.0
 
@@ -60,8 +60,8 @@ def mobile_management():
 
     utils.attach.add_screenshot(browser)
     utils.attach.add_xml(browser)
-    if config.settings.ENVIRONMENT == 'bstack':
-        session_id = browser.driver.session_id
+
+    session_id = browser.driver.session_id
 
     browser.quit()
 
