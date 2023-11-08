@@ -52,7 +52,7 @@ echo BSTACK_ACCESS_KEY='any_browserstack_access_key' >> .env
 pytest .
 ```
 
-## Для автоматизированного запуска тестов на сервисе <a target="_blank" href="https://www.browserstack.com">browserstack</a> написана джоба в <a target="_blank" href="https://jenkins.autotests.cloud/job/Ponomarev-IV-Wiki_App_Test/">Jenkins</a>.
+## Для автоматизированного запуска тестов на сервисе <a target="_blank" href="https://www.browserstack.com">Browserstack</a> написана джоба в <a target="_blank" href="https://jenkins.autotests.cloud/job/Ponomarev-IV-Wiki_App_Test/">Jenkins</a>.
 
 ### Для запуска автотестов необходимо:
 - Открыть подготовленную <a target="_blank" href="https://jenkins.autotests.cloud/job/Ponomarev-IV-Wiki_App_Test/">джобу</a> в Jenkins
@@ -90,6 +90,6 @@ pytest .
 
 ![This is an image](design/images/telegram.png)
 
-## Ниже на видео представлен пример короткого теста на сервисе <a target="_blank" href="https://www.browserstack.com">browserstack</a>.
+## Ниже на видео представлен пример короткого теста на сервисе <a target="_blank" href="https://www.browserstack.com">Browserstack</a>.
 
 ![This is an image](design/gif/test_video_example.gif)
