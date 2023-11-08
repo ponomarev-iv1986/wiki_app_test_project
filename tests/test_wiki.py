@@ -40,7 +40,7 @@ def test_main_screen():
 @allure.label('owner', 'ponomarev-iv1986')
 @allure.tag('mobile')
 @allure.severity(Severity.NORMAL)
-@allure.title('Поиск проверяем поиск и открытие статьи')
+@allure.title('Проверяем поиск и открытие статьи')
 def test_search_in_wiki():
     with allure.step('Закрываем экран приветствия'):
         browser.element(
