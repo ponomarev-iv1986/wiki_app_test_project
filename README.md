@@ -52,6 +52,8 @@ echo BSTACK_ACCESS_KEY='any_browserstack_access_key' >> .env
 pytest .
 ```
 
+### По <a target="_blank" href="https://www.loom.com/share/28da1570b9154388bb3b53519dcf094a?sid=15b6ab02-95a7-437c-91e7-afcf7e1c6900">ссылке</a> видео-инструкция запуска автотестов локально на эмуляторе и сервисе <a target="_blank" href="https://www.browserstack.com">Browserstack</a>.
+
 ## Для автоматизированного запуска тестов на сервисе <a target="_blank" href="https://www.browserstack.com">Browserstack</a> написана джоба в <a target="_blank" href="https://jenkins.autotests.cloud/job/Ponomarev-IV-Wiki_App_Test/">Jenkins</a>.
 
 ### Для запуска автотестов необходимо:
